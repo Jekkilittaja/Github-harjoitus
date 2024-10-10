@@ -26,5 +26,19 @@ public class App {
         catch(InterruptedException ex) { 
             Thread.currentThread().interrupt();
         }
+        for (int i = 0; i < nums.length; i++) {
+            System.out.println("Anna " + (i+1) + "." + "numero:");
+            ans[i] = sc.nextInt();
+        }
+
+        System.out.println("Oikeat numerot: ");
+        for (int i = 0; i < nums.length; i++) {
+            System.out.print(nums[i]);
+        }
+        System.out.println();
+        System.out.println("Sinun numerosi: ");
+        for (int i = 0; i < ans.length; i++) {
+            System.out.print(ans[i]);
+        }
     }
 }
